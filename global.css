@@ -19,16 +19,25 @@
   --font-nunito-extrabold: "Nunito-ExtraBold";
 }
 
-.tabs-icon .tabs-pill {
-  position: relative;
+.tabs-icon {
+  display: flex;
 }
-.tabs-icon .tabs-pill:after {
-  content: "";
-  position: absolute;
-  width: 48px;
-  height: 48px;
+.tabs-image {
+  width: 22px;
+  height: 22px;
+  filter: invert(100%) grayscale(100%) brightness(200%);
+}
+.tabs-pill {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
 }
-.tabs-icon .tabs-pill.tabs-active {
+.tabs-active {
   background-color: var(--color-secondary);
+}
+.tabs-active .tabs-image {
+  filter: none;
 }

@@ -1,4 +1,3 @@
-// app/(tabs)/_layout.tsx
 import { tabs } from "@/constants/data";
 import { colors, components } from "@/constants/theme";
 import clsx from "clsx";
@@ -14,7 +13,7 @@ const TabLayout = () => {
     return (
       <View className="tabs-icon">
         <View className={clsx("tabs-pill", focused && "tabs-active")}>
-          <Image source={icon} resizeMode="cover" />
+          <Image source={icon} resizeMode="cover" className="tabs-image" />
         </View>
       </View>
     );

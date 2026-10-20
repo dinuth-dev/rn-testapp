@@ -27,6 +27,12 @@ export default function App() {
         Settings
       </Link>
       <Link
+        href="/(tabs)/notifications"
+        className="font-base mt-2 rounded bg-black text-white p-4 text-center"
+      >
+        Notifications
+      </Link>
+      <Link
         href="/(auth)/signin"
         className="font-base mt-2 rounded bg-black text-white p-4 text-center"
       >
