@@ -18,3 +18,17 @@
   --font-nunito-bold: "Nunito-Bold";
   --font-nunito-extrabold: "Nunito-ExtraBold";
 }
+
+.tabs-icon .tabs-pill {
+  position: relative;
+}
+.tabs-icon .tabs-pill:after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.tabs-icon .tabs-pill.tabs-active {
+  background-color: var(--color-secondary);
+}
