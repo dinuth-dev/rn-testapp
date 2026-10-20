@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "app_3",
+    "name": "Test App 1.0.0",
     "slug": "app_3",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -31,6 +31,19 @@
           "backgroundColor": "#208AEF",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Nunito-ExtraLight.ttf",
+            "./assets/fonts/Nunito-Regular.ttf",
+            "./assets/fonts/Nunito-Medium.ttf",
+            "./assets/fonts/Nunito-SemiBold.ttf",
+            "./assets/fonts/Nunito-Bold.ttf",
+            "./assets/fonts/Nunito-ExtraBold.ttf"
+          ]
         }
       ]
     ],
