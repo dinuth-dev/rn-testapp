@@ -8,6 +8,8 @@
   --color-secondary: #b7d894;
   --color-black: #202734;
   --color-light: #eeeeee;
+  --color-white: #ffffff;
+  --color-black-10: #e5e5e5;
 
   --font-sans: "Nunito-Regular";
   --font-base: "Nunito-Regular";
@@ -17,6 +19,49 @@
   --font-nunito-semibold: "Nunito-SemiBold";
   --font-nunito-bold: "Nunito-Bold";
   --font-nunito-extrabold: "Nunito-ExtraBold";
+}
+
+:root {
+  --br-lg: 20px;
+}
+
+@layer components {
+  .btn {
+    @apply font-base mt-2 rounded bg-black text-white p-4 text-center;
+  }
+  .list-header {
+    @apply flex-row items-center justify-between mb-4 mt-10;
+  }
+  .list-header-title {
+    @apply text-2xl font-nunito-bold;
+  }
+  .list-header-link {
+    @apply py-2 px-5 border-1 border-primary color-primary rounded-lg;
+  }
+
+  .banner {
+    @apply overflow-hidden;
+    border-radius: var(--br-lg);
+  }
+
+  .card {
+    @apply p-4 rounded-lg border-1 border-black-10 bg-white;
+  }
+  .card .card-body {
+    @apply flex items-center justify-center;
+  }
+  .card .user-img {
+    @apply w-50 h-50 rounded-full bg-gray-100;
+  }
+  .card .user-name {
+    @apply text-base font-semibold text-gray-900;
+  }
+  .card .user-company {
+    @apply text-sm text-gray-500 mt-0.5;
+  }
+  .card .user-type {
+    @apply text-xs text-gray-400 mt-1;
+  }
 }
 
 .tabs-icon {
@@ -40,4 +85,10 @@
 }
 .tabs-active .tabs-image {
   filter: none;
+}
+.banner .banner-img {
+  aspect-ratio: 4/2.5;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
