@@ -1,10 +1,13 @@
 import { Link } from "expo-router";
+import { styled } from "nativewind";
 import { Text } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
+
+const SafeAreaView = styled(RNSafeAreaView);
 
 export default function App() {
   return (
-    <SafeAreaView className="flex-1">
+    <SafeAreaView className="flex-1 p-5">
       <Text className="text-2xl text-blue-500 font-nunito-bold">
         Welcome to Home!
       </Text>

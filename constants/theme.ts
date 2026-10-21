@@ -7,6 +7,7 @@ export const colors = {
 
 export const spacing = {
   2: 8,
+  4: 16,
   5: 20,
   8: 32,
   12: 48,
@@ -16,7 +17,7 @@ export const spacing = {
 export const components = {
   tabBar: {
     height: spacing[18],
-    horizontalInset: spacing[5],
+    horizontalInset: spacing[4],
     radius: spacing[5],
     iconFrame: spacing[12],
     itemPaddingVertical: spacing[2],
