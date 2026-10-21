@@ -11,6 +11,8 @@
   --color-white: #ffffff;
   --color-black-10: #e5e5e5;
 
+  --text-xs: 0.625rem;
+
   --font-sans: "Nunito-Regular";
   --font-base: "Nunito-Regular";
   --font-nunito: "Nunito-Regular";
@@ -27,7 +29,7 @@
 
 @layer components {
   .btn {
-    @apply font-base mt-2 rounded bg-black text-white p-4 text-center;
+    @apply font-nunito mt-2 rounded bg-black text-white p-4 text-center;
   }
   .list-header {
     @apply flex-row items-center justify-between mb-4 mt-10;
@@ -36,7 +38,10 @@
     @apply text-2xl font-nunito-bold;
   }
   .list-header-link {
-    @apply py-2 px-5 border-1 border-primary color-primary rounded-lg;
+    @apply py-2 px-5 border-1 border-primary rounded-lg;
+  }
+  .list-header-text {
+    /* @apply text-sm color-primary; */
   }
 
   .banner {
@@ -44,23 +49,23 @@
     border-radius: var(--br-lg);
   }
 
-  .card {
-    @apply p-4 rounded-lg border-1 border-black-10 bg-white;
+  .card-item {
+    @apply w-auto h-auto;
   }
-  .card .card-body {
-    @apply flex items-center justify-center;
+  .card-item .box {
+    @apply p-4 flex-col items-center;
   }
-  .card .user-img {
-    @apply w-50 h-50 rounded-full bg-gray-100;
+  .card-item .user-img {
+    @apply w-25 h-25 rounded-full bg-gray-100 mb-2;
   }
-  .card .user-name {
-    @apply text-base font-semibold text-gray-900;
+  .card-item .user-name {
+    @apply text-gray-900 font-nunito-bold;
   }
-  .card .user-company {
-    @apply text-sm text-gray-500 mt-0.5;
+  .card-item .user-company {
+    @apply text-sm text-gray-500 mt-0.5 font-nunito;
   }
-  .card .user-type {
-    @apply text-xs text-gray-400 mt-1;
+  .card-item .user-type {
+    @apply text-xs text-gray-400 mt-1 border-1 border-gray-400 py-1 px-3 rounded-full font-nunito-bold uppercase tracking-wider inline;
   }
 }
 

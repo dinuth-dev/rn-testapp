@@ -11,7 +11,7 @@ const ListHeading = ({ title, url, url_text }: ListHeadingProps) => {
     <View className="list-header">
       <Text className="list-header-title">{title}</Text>
       <TouchableOpacity className="list-header-link">
-        <Text>{url_text}</Text>
+        <Text className="list-header-text">{url_text}</Text>
       </TouchableOpacity>
     </View>
   );
