@@ -5,7 +5,7 @@ type DataProps = {
   data: UserList;
 };
 
-const Card = ({
+const UserCard = ({
   data: { user_img, name, company_name, user_type },
 }: DataProps) => {
   return (
@@ -20,4 +20,4 @@ const Card = ({
   );
 };
 
-export default Card;
+export default UserCard;

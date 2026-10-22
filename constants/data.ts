@@ -2,13 +2,16 @@ import type { ImageSourcePropType } from "react-native";
 import { icons } from "./icons";
 import images from "./images";
 
+// Nav tabs data
 export const tabs = [
   { name: "index", title: "Home", icon: icons.home },
-  { name: "users", title: "Users", icon: icons.people },
-  { name: "notifications", title: "Notifications", icon: icons.bell },
-  { name: "settings", title: "Settings", icon: icons.gear },
+  { name: "event", title: "Event", icon: icons.calendar_check },
+  { name: "members", title: "Members", icon: icons.people },
+  { name: "chat", title: "Chat", icon: icons.chat },
+  { name: "profile", title: "Profile", icon: icons.person },
 ];
 
+// Users data
 export type UserList = {
   id: number;
   name: string;
@@ -52,5 +55,33 @@ export const USER_LIST: UserList[] = [
     company_name: "Rabbit Limited",
     user_type: "Member",
     user_img: images.avatar_2,
+  },
+];
+
+// Member data
+export type Branch = "Globle" | "Ecommerce";
+
+export const BRANCH_LOGOS: Record<Branch, ImageSourcePropType> = {
+  Globle: images.globle_logo,
+  Ecommerce: images.ecommerce_logo,
+};
+
+export type MemberList = {
+  id: string;
+  name: string;
+  location: string;
+  country_code: string;
+  branch: Branch[];
+  member_img: ImageSourcePropType;
+};
+
+export const MEMBER_LIST: MemberList[] = [
+  {
+    id: "UGB00001",
+    name: "3k Shipping Services",
+    location: "Pakistan Karachi",
+    country_code: "PK",
+    branch: ["Globle", "Ecommerce"],
+    member_img: images.thumbnail,
   },
 ];

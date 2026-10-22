@@ -1,6 +1,7 @@
-import Card from "@/components/Card";
 import ListHeading from "@/components/ListHeading";
-import { USER_LIST } from "@/constants/data";
+import MemberCard from "@/components/MemberCard";
+import UserCard from "@/components/UserCard";
+import { MEMBER_LIST, USER_LIST } from "@/constants/data";
 import images from "@/constants/images";
 import { Link } from "expo-router";
 import { styled } from "nativewind";
@@ -20,7 +21,7 @@ export default function App() {
       <FlatList
         data={USER_LIST}
         keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => <Card data={item} />}
+        renderItem={({ item }) => <UserCard data={item} />}
         horizontal
         showsHorizontalScrollIndicator={false}
         ListEmptyComponent={
@@ -29,10 +30,16 @@ export default function App() {
         contentContainerStyle={{ alignItems: "center" }}
       />
 
-      <ListHeading
-        title="Notifications"
-        url_text="View all"
-        url="/(tabs)/notifications"
+      <ListHeading title="Members" url_text="View all" url="/(tabs)/members" />
+      <FlatList
+        data={MEMBER_LIST}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => <MemberCard data={item} />}
+        showsHorizontalScrollIndicator={false}
+        ListEmptyComponent={
+          <Text className="text-gray-500">No user data!</Text>
+        }
+        contentContainerStyle={{ alignItems: "center" }}
       />
 
       <Link href="/(auth)/signin" className="btn">

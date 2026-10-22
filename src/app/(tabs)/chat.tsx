@@ -4,14 +4,12 @@ import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 
 const SafeAreaView = styled(RNSafeAreaView);
 
-const Users = () => {
+const Chat = () => {
   return (
     <SafeAreaView className="flex-1 p-5">
-      <Text className="text-2xl text-blue-500 font-nunito-bold">
-        Users Page
-      </Text>
+      <Text className="text-2xl text-blue-500 font-nunito-bold">Chat Page</Text>
     </SafeAreaView>
   );
 };
 
-export default Users;
+export default Chat;

@@ -4,14 +4,14 @@ import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 
 const SafeAreaView = styled(RNSafeAreaView);
 
-const Notifications = () => {
+const Profile = () => {
   return (
     <SafeAreaView className="flex-1 p-5">
       <Text className="text-2xl text-blue-500 font-nunito-bold">
-        Notifications Page
+        Profile Page
       </Text>
     </SafeAreaView>
   );
 };
 
-export default Notifications;
+export default Profile;

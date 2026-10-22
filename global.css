@@ -34,14 +34,18 @@
   .list-header {
     @apply flex-row items-center justify-between mb-4 mt-10;
   }
-  .list-header-title {
+  .list-header-title,
+  .page-header-title {
     @apply text-2xl font-nunito-bold;
   }
   .list-header-link {
     @apply py-2 px-5 border-1 border-primary rounded-lg;
   }
   .list-header-text {
-    /* @apply text-sm color-primary; */
+    @apply text-sm color-primary;
+  }
+  .page-header {
+    @apply mb-4;
   }
 
   .banner {
@@ -73,8 +77,8 @@
   display: flex;
 }
 .tabs-image {
-  width: 22px;
-  height: 22px;
+  width: 23px;
+  height: 23px;
   filter: invert(100%) grayscale(100%) brightness(200%);
 }
 .tabs-pill {
