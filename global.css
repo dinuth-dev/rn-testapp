@@ -60,7 +60,11 @@
     @apply p-4 flex-col items-center;
   }
   .card-item .user-img {
-    @apply w-25 h-25 rounded-full bg-gray-100 mb-2;
+    @apply mb-2;
+  }
+  .card-item .user-img,
+  .member-card .member-img {
+    @apply w-25 h-25 rounded-full bg-gray-100;
   }
   .card-item .user-name {
     @apply text-gray-900 font-nunito-bold;
@@ -70,6 +74,12 @@
   }
   .card-item .user-type {
     @apply text-xs text-gray-400 mt-1 border-1 border-gray-400 py-1 px-3 rounded-full font-nunito-bold uppercase tracking-wider inline;
+  }
+  .member-card {
+    @apply w-100 h-auto;
+  }
+  .member-card .box {
+    @apply flex-row gap-4 jus;
   }
 }
 

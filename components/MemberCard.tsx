@@ -10,20 +10,22 @@ const MemberCard = ({
   data: { member_img, name, location, country_code, branch, id },
 }: DataProps) => {
   return (
-    <View className="card-item">
+    <View className="member-card">
       <View className="box">
-        <Image className="user-img" source={member_img}></Image>
-        <Text className="user-name">{name}</Text>
-        <Text className="user-company">{location}</Text>
-        <CountryFlag isoCode={country_code} size={20} />
-        {branch.map((b) => (
-          <Image
-            key={b}
-            source={BRANCH_LOGOS[b]}
-            style={{ width: 24, height: 24 }}
-          />
-        ))}
-        <Text className="user-id">{id}</Text>
+        <Image className="member-img" source={member_img}></Image>
+        <View>
+          <Text className="member-name">{name}</Text>
+          <Text className="member-location">{location}</Text>
+          <CountryFlag isoCode={country_code} size={20} />
+          {branch.map((b) => (
+            <Image
+              key={b}
+              source={BRANCH_LOGOS[b]}
+              style={{ width: 24, height: 24 }}
+            />
+          ))}
+          <Text className="user-id">{id}</Text>
+        </View>
       </View>
     </View>
   );
