@@ -11,6 +11,15 @@
   --color-white: #ffffff;
   --color-black-10: #e5e5e5;
 
+  --color-theme-pri-800: #01307a;
+  --color-theme-pri-600: #045fab;
+
+  --color-theme-sec-800: #ff954e;
+  --color-theme-sec-600: #ffc54e;
+
+  --color-theme-acc-800: #d32323;
+  --color-theme-acc-600: #ff5757;
+
   --text-xs: 0.625rem;
 
   --font-sans: "Nunito-Regular";
@@ -67,7 +76,8 @@
     @apply w-25 h-25 rounded-full bg-gray-100;
   }
   .card-item .user-name {
-    @apply text-gray-900 font-nunito-bold;
+    @apply text-gray-900 font-nunito-bold text-center;
+    max-width: 120px;
   }
   .card-item .user-company {
     @apply text-sm text-gray-500 mt-0.5 font-nunito;
@@ -76,10 +86,29 @@
     @apply text-xs text-gray-400 mt-1 border-1 border-gray-400 py-1 px-3 rounded-full font-nunito-bold uppercase tracking-wider inline;
   }
   .member-card {
-    @apply w-100 h-auto;
+    @apply border-0 rounded-xl mb-4 overflow-hidden;
   }
   .member-card .box {
-    @apply flex-row gap-4 jus;
+    @apply flex w-100 flex-row gap-6 items-center justify-start p-4 relative;
+  }
+  .member-card .member-info {
+    @apply w-full;
+  }
+  .member-card .member-info .member-name {
+    @apply text-lg font-nunito-bold text-white truncate pr-8;
+  }
+  .member-card .member-info .member-location {
+    @apply text-sm font-nunito-semibold text-white mb-2;
+  }
+  .member-card .member-info .member-img-group {
+    @apply flex-row items-center gap-1;
+  }
+  .member-card .member-info .user-id {
+    @apply text-lg font-nunito-semibold text-white absolute bottom-0 right-2;
+  }
+  .member-card .member-info .icon {
+    @apply absolute top-0 right-2;
+    filter: invert(100%) grayscale(100%) brightness(200%);
   }
 }
 
@@ -100,7 +129,7 @@
   border-radius: 50%;
 }
 .tabs-active {
-  background-color: var(--color-secondary);
+  background-color: var(--color-light);
 }
 .tabs-active .tabs-image {
   filter: none;

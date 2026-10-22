@@ -39,7 +39,6 @@ export default function App() {
         ListEmptyComponent={
           <Text className="text-gray-500">No user data!</Text>
         }
-        contentContainerStyle={{ alignItems: "center" }}
       />
 
       <Link href="/(auth)/signin" className="btn">

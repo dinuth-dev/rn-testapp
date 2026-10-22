@@ -60,6 +60,7 @@ export const USER_LIST: UserList[] = [
 
 // Member data
 export type Branch = "Globle" | "Ecommerce";
+export type ColorPair = [color1: string, color2: string];
 
 export const BRANCH_LOGOS: Record<Branch, ImageSourcePropType> = {
   Globle: images.globle_logo,
@@ -72,6 +73,7 @@ export type MemberList = {
   location: string;
   country_code: string;
   branch: Branch[];
+  colors: ColorPair;
   member_img: ImageSourcePropType;
 };
 
@@ -82,6 +84,25 @@ export const MEMBER_LIST: MemberList[] = [
     location: "Pakistan Karachi",
     country_code: "PK",
     branch: ["Globle", "Ecommerce"],
+    colors: ["#01307a", "#045fab"],
+    member_img: images.thumbnail,
+  },
+  {
+    id: "UGB00014",
+    name: "Accel Transport & Logistics",
+    location: "India Chennai",
+    country_code: "IN",
+    branch: ["Globle"],
+    colors: ["#ff954e", "#ffc54e"],
+    member_img: images.thumbnail,
+  },
+  {
+    id: "UGB00022",
+    name: "AKA International Link Sdn Bhd",
+    location: "Malaysia Klang",
+    country_code: "MY",
+    branch: ["Globle"],
+    colors: ["#d32323", "#ff5757"],
     member_img: images.thumbnail,
   },
 ];

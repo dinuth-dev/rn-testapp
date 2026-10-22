@@ -9,7 +9,7 @@ const SafeAreaView = styled(RNSafeAreaView);
 
 const Members = () => {
   return (
-    <SafeAreaView className="flex-1 p-5">
+    <SafeAreaView className="p-5">
       <PageHeading title="Members" />
       <FlatList
         data={MEMBER_LIST}
@@ -19,7 +19,6 @@ const Members = () => {
         ListEmptyComponent={
           <Text className="text-gray-500">No user data!</Text>
         }
-        contentContainerStyle={{ alignItems: "center" }}
       />
     </SafeAreaView>
   );
