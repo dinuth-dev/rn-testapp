@@ -35,7 +35,7 @@ export default function App() {
         data={MEMBER_LIST}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => <MemberCard data={item} />}
-        showsHorizontalScrollIndicator={false}
+        showsVerticalScrollIndicator={false}
         ListEmptyComponent={
           <Text className="text-gray-500">No user data!</Text>
         }

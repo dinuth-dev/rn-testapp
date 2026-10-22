@@ -119,6 +119,7 @@
   width: 23px;
   height: 23px;
   filter: invert(100%) grayscale(100%) brightness(200%);
+  pointer-events: none;
 }
 .tabs-pill {
   width: 44px;
