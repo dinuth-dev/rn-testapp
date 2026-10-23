@@ -37,11 +37,14 @@
 }
 
 @layer components {
+  .app-container {
+    @apply p-5 bg-light pt-30;
+  }
   .btn {
     @apply font-nunito mt-2 rounded bg-black text-white p-4 text-center;
   }
   .list-header {
-    @apply flex-row items-center justify-between mb-4 mt-10;
+    @apply flex-row items-center justify-between mb-6 mt-12;
   }
   .list-header-title,
   .page-header-title {
@@ -53,8 +56,14 @@
   .list-header-text {
     @apply text-sm color-primary;
   }
+  .page-navbar {
+    @apply flex-row items-center justify-between bg-light px-5 pb-10;
+  }
   .page-header {
     @apply mb-4;
+  }
+  .menu-item {
+    @apply text-lg font-nunito-bold text-primary;
   }
 
   .banner {
@@ -66,14 +75,14 @@
     @apply w-auto h-auto;
   }
   .card-item .box {
-    @apply p-4 flex-col items-center;
+    @apply flex-col items-center border-1 border-gray-300 p-4 mr-2 rounded-xl w-40;
   }
   .card-item .user-img {
     @apply mb-2;
   }
   .card-item .user-img,
   .member-card .member-img {
-    @apply w-25 h-25 rounded-full bg-gray-100;
+    @apply w-20 h-20 rounded-full bg-gray-100;
   }
   .card-item .user-name {
     @apply text-gray-900 font-nunito-bold text-center;

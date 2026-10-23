@@ -30,7 +30,7 @@ export const USER_LIST: UserList[] = [
   },
   {
     id: 2,
-    name: "Grey Campos",
+    name: "Selena Campos",
     company_name: "Ravenetworks",
     user_type: "Member",
     user_img: images.avatar_2,

@@ -9,9 +9,13 @@ const SafeAreaView = styled(RNSafeAreaView);
 
 const Members = () => {
   return (
-    <SafeAreaView className="p-5">
-      <PageHeading title="Members" />
+    <SafeAreaView className="app-container">
       <FlatList
+        ListHeaderComponent={() => (
+          <>
+            <PageHeading title="Members" />
+          </>
+        )}
         data={MEMBER_LIST}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => <MemberCard data={item} />}
@@ -19,6 +23,7 @@ const Members = () => {
         ListEmptyComponent={
           <Text className="text-gray-500">No user data!</Text>
         }
+        contentContainerClassName="pb-30"
       />
     </SafeAreaView>
   );

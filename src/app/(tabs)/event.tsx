@@ -1,15 +1,13 @@
+import PageHeading from "@/components/PageHeading";
 import { styled } from "nativewind";
-import { Text } from "react-native";
 import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 
 const SafeAreaView = styled(RNSafeAreaView);
 
 const Event = () => {
   return (
-    <SafeAreaView className="flex-1 p-5">
-      <Text className="text-2xl text-blue-500 font-nunito-bold">
-        Event Page
-      </Text>
+    <SafeAreaView className="app-container">
+      <PageHeading title="Event" />
     </SafeAreaView>
   );
 };
