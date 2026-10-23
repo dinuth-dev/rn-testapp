@@ -47,7 +47,7 @@ const SignIn = () => {
           <View className="flex-1 px-5 py-6">
             {/* Header */}
             <View className="mb-10 flex-row items-center justify-between">
-              <View className="h-12 w-12 items-center justify-center rounded-2xl bg-primary">
+              <View className="h-16 w-16 items-center justify-center rounded-2xl bg-primary">
                 <Ionicons name="layers-outline" size={26} color="#ffffff" />
               </View>
 

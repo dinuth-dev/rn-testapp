@@ -3,7 +3,7 @@ import { icons } from "@/constants/icons";
 import images from "@/constants/images";
 import { colors, components } from "@/constants/theme";
 import clsx from "clsx";
-import { Link, router, Tabs } from "expo-router";
+import { router, Tabs } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { useRef, useState } from "react";
 import {
@@ -261,10 +261,20 @@ const TabLayout = () => {
               </TouchableOpacity>
             ))}
 
-            {/* Sign up link */}
-            <Link href="/(auth)/signin">
+            {/* Sign in link */}
+            <TouchableOpacity
+              style={{
+                paddingVertical: 17,
+                borderBottomWidth: 1,
+                borderBottomColor: "#eeeeee",
+              }}
+              onPress={() => {
+                closeMenu();
+                router.navigate("/(auth)/signin");
+              }}
+            >
               <Text className="menu-item">Sign In</Text>
-            </Link>
+            </TouchableOpacity>
 
             {/* Drawer footer */}
             <View
