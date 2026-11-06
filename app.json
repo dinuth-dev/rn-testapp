@@ -12,9 +12,9 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/logo.png",
-        "backgroundImage": "./assets/images/logo.png",
-        "monochromeImage": "./assets/images/logo.png"
+        "foregroundImage": "./assets/images/favicon.png",
+        "backgroundImage": "./assets/images/favicon.png",
+        "monochromeImage": "./assets/images/favicon.png"
       },
       "predictiveBackGestureEnabled": false
     },
@@ -43,7 +43,8 @@
             "./assets/fonts/Nunito-ExtraBold.ttf"
           ]
         }
-      ]
+      ],
+      "expo-asset"
     ],
     "experiments": {
       "typedRoutes": true,

@@ -1,9 +1,11 @@
 import { BRANCH_LOGOS, MemberList } from "@/constants/data";
 import { icons } from "@/constants/icons";
-import { LinearGradient } from "expo-linear-gradient";
+import { LinearGradient as RNLinearGradient } from "expo-linear-gradient";
 import { Image, Text, View } from "react-native";
 import CountryFlag from "react-native-country-flag";
+import { styled } from "react-native-css";
 
+const LinearGradient = styled(RNLinearGradient);
 type DataProps = {
   data: MemberList;
 };
